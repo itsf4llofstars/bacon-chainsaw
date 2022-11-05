@@ -5,6 +5,16 @@ import random
 
 
 def generate_rand_int(high: int, low: int = 1) -> int:
+    """Generate and return a random number btween
+    two user passed numbers.
+
+    parameters:
+        low (int): Random start number, inclusive. Defaults to 1
+        hight (int): Random stop number, inclusive.
+
+    returns:
+        (int): Random integer between low and high, inclusive.
+    """
     return random.randint(low, high)
 
 
