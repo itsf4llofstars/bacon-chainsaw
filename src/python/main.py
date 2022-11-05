@@ -5,8 +5,15 @@ class files can be called from.
 import randoms
 
 
+def get_year(low, high):
+    return randoms.generate_rand_int(high, low)
+
+
 def main(argv):
     random_year = randoms.generate_rand_int(2022, 1941)
+    print(f'{random_year = }')
+
+    random_year = get_year(1941, 2022)
     print(f'{random_year = }')
 
 
