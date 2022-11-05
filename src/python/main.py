@@ -2,10 +2,12 @@
 """main.py file form which all other function, helper,
 class files can be called from.
 """
+import randoms
 
 
 def main(argv):
-    pass
+    random_year = randoms.generate_rand_int(2022, 1941)
+    print(f'{random_year = }')
 
 
 if __name__ == '__main__':
