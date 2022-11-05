@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """randoms.py is used to explore Python's random module
 """
 import random
