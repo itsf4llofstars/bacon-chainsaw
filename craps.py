@@ -23,6 +23,7 @@ class CrapsTable:
         self.craps = 0
         self.come_loss = 0
         self.come_seven = 0
+        self.boxcars = 0
         self.points = 0
         self.point = 0
 
@@ -35,6 +36,29 @@ class CrapsTable:
 
     def total_dice(self):
         self.total = self.dice1 + self.dice2
+
+    def check_come_roll(self):
+        if self.total == 2:
+            self.snake_eyes += 1
+            self.craps += 1
+            self.come_loss += 1
+        elif self.total == 3:
+            self.ace_duece += 1
+            self.come_loss += 1
+            self.craps += 1
+        elif self.total == 7:
+            self.come_seven += 1
+            self.come_win += 1
+        elif self.total == 11:
+            self.yo += 1
+            self.come_win += 1
+        elif self.total == 12:
+            self.boxcars += 1
+            self.craps == 1
+            self.come_loss += 1
+        else:
+            self.points += 1
+            self.point = self.total
 
 
 if __name__ == '__main__':
