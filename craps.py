@@ -64,12 +64,15 @@ class CrapsTable:
 def main(argvs):
     craps = CrapsTable()
 
-    for _ in range(int(argvs[1])):
-        craps.roll_dice()
-        craps.total_dice()
-        craps.check_come_roll()
-
-    print(craps)
+    try:
+        for _ in range(int(argvs[1])):
+            craps.roll_dice()
+            craps.total_dice()
+            craps.check_come_roll()
+    except Exception as e:
+        print(f'Log: {e}')
+    else:
+        print(craps)
 
 
 if __name__ == '__main__':
