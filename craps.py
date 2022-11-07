@@ -61,13 +61,19 @@ class CrapsTable:
             self.point = self.total
 
 
-if __name__ == '__main__':
+def main(argvs):
     craps = CrapsTable()
 
-    for _ in range(100):
+    for _ in range(int(argvs[1])):
         craps.roll_dice()
         craps.total_dice()
         craps.check_come_roll()
 
     print(craps)
+
+
+if __name__ == '__main__':
+    import sys
+
+    sys.exit(main(sys.argv))
 
