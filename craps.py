@@ -28,7 +28,7 @@ class CrapsTable:
         self.point = 0
 
     def __str__(self):
-        return f'{self.dice1} {self.dice2} {self.total}'
+        return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
 
     def roll_dice(self):
         self.dice1 = random.choice(self.outcome)
@@ -63,7 +63,11 @@ class CrapsTable:
 
 if __name__ == '__main__':
     craps = CrapsTable()
-    craps.roll_dice()
-    craps.total_dice()
+
+    for _ in range(100):
+        craps.roll_dice()
+        craps.total_dice()
+        craps.check_come_roll()
+
     print(craps)
 
