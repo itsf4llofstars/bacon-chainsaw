@@ -26,10 +26,20 @@ class CrapsTable:
         self.points = 0
         self.point = 0
 
+    def __str__(self):
+        return f'{self.dice1} {self.dice2} {self.total}'
+
     def roll_dice(self):
         self.dice1 = random.choice(self.outcome)
         self.dice2 = random.choice(self.outcome)
 
     def total_dice(self):
         self.total = self.dice1 + self.dice2
+
+
+if __name__ == '__main__':
+    craps = CrapsTable()
+    craps.roll_dice()
+    craps.total_dice()
+    print(craps)
 
