@@ -62,7 +62,7 @@ class CrapsTable:
 
 
 def main(argvs):
-    craps = CrapsTable()
+    craps = CrapsTable(10)
 
     try:
         for _ in range(int(argvs[1])):
@@ -73,6 +73,8 @@ def main(argvs):
         print(f'Log: {e}')
     else:
         print(craps)
+
+    print(craps.dice_outcomes)
 
 
 if __name__ == '__main__':
