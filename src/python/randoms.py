@@ -29,19 +29,23 @@ def get_year(low, high):
     returns:
         (int): A random year between low, high inclusive.
     """
-    return random.randint(high, low)
+    return random.randint(low, high)
 
 
 def main(argv):
+    print(f'Running: {argv[0]}')
+
     a_random_int = generate_rand_int(100)
     print(f'{a_random_int = }')
 
     a_random_int = generate_rand_int(30, 20)
     print(f'{a_random_int = }')
 
+    random_year = get_year(1033, 2022)
+    print(f'{random_year = }')
+
 
 if __name__ == '__main__':
     import sys
 
     sys.exit(main(sys.argv))
-
