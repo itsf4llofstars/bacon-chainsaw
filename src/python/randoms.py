@@ -29,7 +29,7 @@ def get_year(low, high):
     returns:
         (int): A random year between low, high inclusive.
     """
-    return randoms.generate_rand_int(high, low)
+    return random.randint(high, low)
 
 
 def main(argv):
