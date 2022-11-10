@@ -3,6 +3,7 @@
 of dice used in a standard Vegas style craps game
 """
 import random
+import sys
 
 
 class CrapsTable:
@@ -72,6 +73,11 @@ class CrapsTable:
 
 
 def main(argvs):
+    if not 1 < len(argvs) < 3:
+        print('A single command line argument of the number of dice rolls to make must be passed.\n'
+              'ex: python3 craps.py 10000\n')
+        sys.exit()
+
     craps = CrapsTable(int(argvs[1]))
 
     try:
@@ -88,7 +94,5 @@ def main(argvs):
 
 
 if __name__ == '__main__':
-    import sys
-
     sys.exit(main(sys.argv))
 
