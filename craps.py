@@ -29,8 +29,16 @@ class CrapsTable:
         self.point = 0
 
     def __str__(self):
-        # return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
-        return f'Rolls: {self.rolls}\nCome out wins: {self.come_win}\nCome out Losses: {self.come_loss}\nCraps: {self.craps}\nPoints set: {self.points}\n'
+        return f'Rolls: {self.rolls} \
+            \nCome out wins: {self.come_win}: {round(self.come_win / self.rolls, 3)} \
+            \nSevens: {self.come_seven}: {round(self.come_seven / self.rolls, 3)} \
+            \nYo 11\'s {self.yo}: {round(self.yo / self.rolls, 3)} \
+            \nCome out Losses: {self.come_loss}: {round(self.come_loss / self.rolls, 3)} \
+            \nCraps: {self.craps}: {round(self.craps / self.rolls, 3)} \
+            \nSnake eyes: {self.snake_eyes}: {round(self.snake_eyes / self.rolls, 3)} \
+            \nAce duece: {self.ace_duece}: {round(self.ace_duece / self.rolls, 3)} \
+            \nBoxcars: {self.boxcars}: {round(self.boxcars / self.rolls, 3)} \
+            \nPoints set: {self.points}: {round(self.points / self.rolls, 3)}'
 
     def roll_dice(self):
         self.dice1 = random.choice(self.outcome)
