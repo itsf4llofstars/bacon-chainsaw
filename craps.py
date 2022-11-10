@@ -28,6 +28,7 @@ class CrapsTable:
         self.point = 0
 
     def __str__(self):
+        # return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
         return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
 
     def roll_dice(self):
@@ -74,7 +75,7 @@ def main(argvs):
     else:
         print(craps)
 
-    print(craps.dice_outcomes)
+    # print(craps.dice_outcomes)
 
 
 if __name__ == '__main__':
