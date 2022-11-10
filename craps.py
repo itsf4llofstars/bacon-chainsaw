@@ -11,10 +11,10 @@ class CrapsTable:
         self.dice2 = 0
         self.total = 0
         self.outcome = [1, 2, 3, 4, 5, 6]
-        self.dice_outcomes = random.choices(
-            [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-            [1 / 36, 1 / 18, 1 / 12, 1 / 9, 5 / 36, 1 / 6, 5 / 36, 1 / 9, 1 / 12, 1 / 18, 1 / 36],
-            k=k_index)
+        # self.dice_outcomes = random.choices(
+        #     [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        #     [1 / 36, 1 / 18, 1 / 12, 1 / 9, 5 / 36, 1 / 6, 5 / 36, 1 / 9, 1 / 12, 1 / 18, 1 / 36],
+        #     k=k_index)
         self.rolls = k_index
         self.outcomes = []
         self.snake_eyes = 0
