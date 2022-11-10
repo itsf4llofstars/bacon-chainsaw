@@ -48,6 +48,10 @@ def roll_dice(rolls: int = 1000):
     return outcomes
 
 
+def count_outcomes(outcomes):
+    pass
+
+
 def main(argv):
     print(f'Running: {argv[0]}')
 
