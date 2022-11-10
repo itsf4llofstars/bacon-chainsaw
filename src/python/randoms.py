@@ -32,6 +32,22 @@ def get_year(low, high):
     return random.randint(low, high)
 
 
+def roll_dice(rolls: int = 1000):
+    """Returns a list of the outcomes from rolling two 6 sided
+    dice based off randomly choising the outcome from the porbability
+    that outcome will occur. Best if used with a counting function.
+
+    Args:
+        rolls (int, optional): Number of rolls to simulate. Defaults to 1000.
+    """
+    outcomes = random.choices(
+        [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        [1/36, 1/18, 1/12, 1/9, 5/36, 1/6, 5/36, 1/9, 1/12, 1/18, 1/36],
+        k = rolls
+    )
+    return outcomes
+
+
 def main(argv):
     print(f'Running: {argv[0]}')
 
