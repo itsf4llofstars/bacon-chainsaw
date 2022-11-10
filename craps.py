@@ -15,6 +15,7 @@ class CrapsTable:
             [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
             [1 / 36, 1 / 18, 1 / 12, 1 / 9, 5 / 36, 1 / 6, 5 / 36, 1 / 9, 1 / 12, 1 / 18, 1 / 36],
             k=k_index)
+        self.rolls = k_index
         self.outcomes = []
         self.snake_eyes = 0
         self.ace_duece = 0
@@ -29,7 +30,7 @@ class CrapsTable:
 
     def __str__(self):
         # return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
-        return f'{self.dice1} {self.dice2} {self.total}\n{self.come_win = }\n{self.come_loss = }\n{self.craps = }\n{self.points = }\n{self.point = }'
+        return f'Rolls: {self.rolls}\nCome out wins: {self.come_win}\nCome out Losses: {self.come_loss}\nCraps: {self.craps}\nPoints set: {self.points}\n'
 
     def roll_dice(self):
         self.dice1 = random.choice(self.outcome)
@@ -63,7 +64,7 @@ class CrapsTable:
 
 
 def main(argvs):
-    craps = CrapsTable(10)
+    craps = CrapsTable(int(argvs[1]))
 
     try:
         for _ in range(int(argvs[1])):
