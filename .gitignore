@@ -6,4 +6,6 @@ idea/
 main
 !main.c
 !main.h
-
+primes
+!primes.c
+!primes.h
