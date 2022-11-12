@@ -35,7 +35,7 @@ done
 
 # Log the run if you want
 if [ -f "$HOME"/logfiles/null.log ]; then
-    printf "%s %s\n" "$(date +'%Y-%m%-%dT%H:%M:%S%z')" "$0" >> "$HOME"/logfiles/null.log 2>&1
+    printf "%s %s\n" "$(date +'%Y-%m-%dT%H:%M:%S%z')" "$0" >> "$HOME"/logfiles/null.log 2>&1
 fi
 
 # exit the script
