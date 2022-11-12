@@ -12,7 +12,7 @@
 # Exit at first error
 set -e
 
-# Array of files to be archived
+# Array of files to be archived. Change as needed
 DOTFILES=(.bashrc .bash_aliases .nanorc .gitconfig .tmux.conf)
 
 # Check if folder exists, create it if it does not
@@ -33,7 +33,7 @@ for FILE in "${DOTFILES[@]}"; do
     tar --append --file "$HOME"/safehouse/dotfiles.tar "$HOME"/"$FILE" >/dev/null 2>&1
 done
 
-# Log the run if you want
+# Log the script run if you want
 if [ -f "$HOME"/logfiles/null.log ]; then
     printf "%s %s\n" "$(date +'%Y-%m-%dT%H:%M:%S%z')" "$0" >> "$HOME"/logfiles/null.log 2>&1
 fi
