@@ -33,5 +33,10 @@ for FILE in "${DOTFILES[@]}"; do
     tar --append --file "$HOME"/safehouse/dotfiles.tar "$HOME"/"$FILE" >/dev/null 2>&1
 done
 
+# Log the run if you want
+if [ -f "$HOME"/logfiles/null.log ]; then
+    printf "%s %s\n" "$(date +'%Y-%m%-%dT%H:%M:%S%z')" "$0" >> "$HOME"/logfiles/null.log 2>&1
+fi
+
 # exit the script
 exit
