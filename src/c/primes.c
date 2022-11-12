@@ -18,29 +18,25 @@ void printPrimes(int start, int stop) {
     }
 }
 
-int isItPrime(int isPrime) {
+int isItPrime(int *isPrime) {
     int chkPrime = 1;
-    int halfIsPrime = isPrime / 2;
 
-    while (1)
-    {
-        ++chkPrime;
+    while (++chkPrime < (*isPrime / 2))
+        if (*isPrime % chkPrime == 0)
+            return 0;
 
-        if (chkPrime >= halfIsPrime)
-            return 1;
-        else if (isPrime % chkPrime == 0)
-            break; 
-    
-        ++chkPrime;
-    }
-
-    return 0;
+    return 1;
 }
 
 int main(int argc, char **argv[]) {
     // printPrimes(2, 15);
-    if (isItPrime(47)) {
-        printf("47 is prime\n");
+
+    int number = 25;
+    if (isItPrime(&number)) {
+        printf("%d is prime\n", number);
+    }
+    else {
+        printf("%d is not prime\n", number);
     }
 
     return 0;
