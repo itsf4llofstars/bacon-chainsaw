@@ -26,11 +26,11 @@ if [ -f "$HOME"/safehouse/dotfiles.tar ]; then
 fi
 
 # Create the initial tar file
-tar --create --file "$HOME"/safehouse/dotfiles.tar "$HOME"/.vimrc
+tar --create --file "$HOME"/safehouse/dotfiles.tar "$HOME"/.vimrc >/dev/null 2>&1
 
 # Append additional files to the tar file
 for FILE in "${DOTFILES[@]}"; do
-    tar --append --file "$HOME"/safehouse/dotfiles.tar "$HOME"/"$FILE"
+    tar --append --file "$HOME"/safehouse/dotfiles.tar "$HOME"/"$FILE" >/dev/null 2>&1
 done
 
 # exit the script
