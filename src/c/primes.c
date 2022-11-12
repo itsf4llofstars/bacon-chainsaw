@@ -29,15 +29,13 @@ int isItPrime(int *isPrime) {
 }
 
 int main(int argc, char **argv[]) {
-    // printPrimes(2, 15);
+    printPrimes(2, 15);
 
     int number = 25;
-    if (isItPrime(&number)) {
+    if (isItPrime(&number))
         printf("%d is prime\n", number);
-    }
-    else {
+    else
         printf("%d is not prime\n", number);
-    }
 
     return 0;
 }
