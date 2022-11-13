@@ -40,3 +40,7 @@ All are welcome to contribute.<br>
 
 This section is for editing and watching how various IDE, Editors and<br>
 VCS systems interact with GitHub.<br>
+
+#### A Web-Link in Markdown
+
+Goto [Google](https://www.google.com) to search the web.<br>
