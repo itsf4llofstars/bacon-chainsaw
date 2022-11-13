@@ -1,19 +1,12 @@
 #include <stdio.h>
 /**
- * Just some C code for exploring GitHub
+ * Just some C code for exploring GitHub and it's interaction
+ * with IDE's and editor's
  * */
-
-typedef struct
-{
-    const char *make;
-    int year;
-} car; 
 
 int main(int argc, char *argv[])
 {
-    car aCar = {"Chevy", 2021};
-    printf("I own a %d %s Volt.\n", aCar.year, aCar.make);
+    printf("Hello, world!\n");
 
-    puts("");
     return 0;
 }
