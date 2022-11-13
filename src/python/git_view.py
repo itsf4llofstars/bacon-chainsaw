@@ -17,10 +17,12 @@ def is_it_prime(number: int) -> bool:
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n: int = 13
 
-    if is_it_prime(n):
-        print(f'{n} is prime')
-    else:
-        print(f'{n} is not prime')
+    printf(f"{n} is ", end="")
+
+    if not is_it_prime(n):
+        print("not ", end="")
+    
+    print("prime.")
