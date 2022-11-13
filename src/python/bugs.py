@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """bugs.py file for creating buggy code to view and learn
-how to fix issues on github both for the fixed and for
+how to fix issues on github both for the fixer and for
 the repository maintainers
 """
 
