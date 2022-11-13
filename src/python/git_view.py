@@ -1,30 +1,24 @@
 #!/usr/bin/env python3
-"""DOC"""
+"""Python file to watch how things interact with PyCharm
+Git and GitHub
+"""
 
 
-def add_two_nums(a: int, b: int = 47) -> int:
-    """
-    parameters:
-        a [int]: Parameter to be added.
-        b [int]: Parmeter to be added. (optional) deafulted to 47
+def is_it_prime(number: int) -> bool:
+    """Returns True if the passed number is prime."""
+    chk_prime: int = 1
 
-    return:
-        [int]: b added to a
-    """
-    c: int = a + b
-    return c
+    while chk_prime <= (number // 2):
+        chk_prime += 1
 
+        if not number % chk_prime:
+            return False
 
-def main(argv, *args, **kwargs) -> None:
-    """main function"""
-    print(add_two_nums(int(argv[1])))
-    print(add_two_nums(int(argv[1]), int(argv[2])))
-
-    x: int = 20
-    y: int = 30
-    print(add_two_nums(x, y))
+    return True
 
 
 if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
+    n: int = 13
+
+    if is_it_prime(n):
+        print(f'{n} is prime')
