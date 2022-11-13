@@ -35,33 +35,3 @@ and others.<br>
 ## Contributing
 
 All are welcome to contribute.<br>
-
-## Editing
-
-This section is for editing and watching how various IDE, Editors and<br>
-VCS systems interact with GitHub.<br>
-
-#### A Web-Link in Markdown
-
-Goto [Google](https://www.google.com) to search the web.<br>
-
-#### A List of Things
-
-1. Thing one
-2. Thing two
-   1. Sub one of thing two
-   2. Sub two of thing two
-3. Thing three
-4. Thing four
-
-#### The Command Line
-
-What to enter
-
-```bash
-$ ed -E -v -p "ed: " file.txt
-```
-
-What to expect
-
-> ed:
