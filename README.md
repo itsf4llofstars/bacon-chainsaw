@@ -53,3 +53,15 @@ Goto [Google](https://www.google.com) to search the web.<br>
    2. Sub two of thing two
 3. Thing three
 4. Thing four
+
+#### The Command Line
+
+What to enter
+
+```bash
+$ ed -E -v -p "ed: " file.txt
+```
+
+What to expect
+
+> ed:
