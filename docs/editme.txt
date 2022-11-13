@@ -1,1 +1,4 @@
 This file created and edited on the local machine with PyCharm
+
+This edit 1 performed on GitHub's repo page on the main branch.
+This edit 2 perfomred on GitHub's repo page on the main branch.
