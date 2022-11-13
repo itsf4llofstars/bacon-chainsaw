@@ -35,3 +35,8 @@ and others.<br>
 ## Contributing
 
 All are welcome to contribute.<br>
+
+## Editing
+
+This section is for editing and watching how various IDE, Editors and<br>
+VCS systems interact with GitHub.<br>
