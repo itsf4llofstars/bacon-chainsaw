@@ -3,10 +3,13 @@
 class files can be called from.
 """
 
+# Create variables for current century and year
+century: str = '20'
+year: str = '22'
 
-def main():
-    pass
+# Add the year to century for printing full year
+century_year = year + century
 
+# Print full current year
+print("The year is " + century_year)
 
-if __name__ == '__main__':
-    main()
