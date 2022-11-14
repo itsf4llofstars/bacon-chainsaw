@@ -29,6 +29,30 @@ int isItPrime(int *isPrime) {
     return 1;
 }
 
+// Count the prime numbers between start and stop
+int countPrimes(int start, int stop) {
+    int chkPrime = 1;
+    int primes = 0;
+    int nonPrimes = 0;
+
+    while (start < stop) {
+        ++chkPrime;
+
+        if (chkPrime >= (start / 2)) {
+            ++primes;
+            ++start;
+            chkPrime = 1;
+        }
+        else if (!(start % chkPrime)) {
+            ++nonPrimes;
+            ++start;
+            chkPrime = 1;
+        }
+    }
+
+    printf("Between %d and %d, there are %d prime numbers and %d non-prime numbers.\n", star, stop, primes, nonPrimes);
+}
+
 int main(int argc, char **argv[]) {
     printPrimes(2, 15);
 
