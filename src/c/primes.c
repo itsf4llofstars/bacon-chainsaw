@@ -18,6 +18,7 @@ void printPrimes(int start, int stop) {
     }
 }
 
+// Determine if isPrime is a prime number
 int isItPrime(int *isPrime) {
     int chkPrime = 1;
 
