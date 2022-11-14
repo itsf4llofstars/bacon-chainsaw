@@ -51,16 +51,13 @@ int countPrimes(int start, int stop) {
     }
 
     printf("Between %d and %d, there are %d prime numbers and %d non-prime numbers.\n", star, stop, primes, nonPrimes);
+    return primes;
 }
 
 int main(int argc, char **argv[]) {
     printPrimes(2, 15);
-
-    int number = 25;
-    if (isItPrime(&number))
-        printf("%d is prime\n", number);
-    else
-        printf("%d is not prime\n", number);
+    int itsPrime = isItPrime(47);
+    int numPrimes = countPrimes(2, 47);
 
     return 0;
 }
