@@ -30,7 +30,7 @@ Using any editor we wish like (but not limited to):
 - PyCharm
 - VsCode
 
-and others.<br>
+or any editor, IDE, of your choice.
 
 ## Contributing
 
