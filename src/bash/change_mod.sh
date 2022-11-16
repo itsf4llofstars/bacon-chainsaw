@@ -6,5 +6,5 @@ FILENAME="$1"
 EXECUTE=755
 
 if [ "$FILENAME" ]; then
-    printf "OK: %s %s" "$FILENAME" "$EXECUTE"
+    chmod "$EXECUTE" "$FILENAME"
 fi
