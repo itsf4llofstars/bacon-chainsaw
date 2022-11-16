@@ -7,4 +7,6 @@ EXECUTE=755
 
 if [ "$FILENAME" ]; then
     chmod "$EXECUTE" "$FILENAME"
+else
+    printf "%s\n" "A command line argument filename is needed."
 fi
