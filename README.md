@@ -1,5 +1,5 @@
 # bacon-chainsaw
-A repo to explore the features of GitHub et al.
+A repo to explore the features of GitHub.
 
 Here the idea is to take the opportunity to explore the features of GitHub.<br>
 Items like:
@@ -23,7 +23,7 @@ We'll be using simple scripts or programs using the languges:
 
 ## Editors
 
-Using any editor we wish like:
+Using any editor we wish like (but not limited to):
 - ed
 - Vim
 - Vi
