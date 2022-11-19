@@ -3,14 +3,19 @@
 # files. This file can be used manualy or setup as a cron job. You will need
 # to populate the DOTFILES array with the files of your choice.
 
-# Exit at first error
+# Exit at first error (not needed)
 set -e
 
 # Array of files to be archived. Change as needed
 DOTFILES=(.bashrc .bash_aliases .nanorc .gitconfig .tmux.conf)
 
 # Check if folder exists, create it if it does not
-if [ ! -d "$HOME"/safehouse ]; then
+if [ d "$HOME"/safehouse ]; then
+        # Check if old archive file exists and delete it if it does
+        if [ -f "$HOME"/safehouse/dotfiles.tar ]; then
+                rm "$HOME"/safehouse/dotfiles.tar
+        fi
+elif [ ! -d "$HOME"/safehouse ]; then
     mkdir "$HOME"/safehouse
 fi
 
