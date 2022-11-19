@@ -19,11 +19,6 @@ elif [ ! -d "$HOME"/safehouse ]; then
     mkdir "$HOME"/safehouse
 fi
 
-# Delete a previouse tar file if it exists
-if [ -f "$HOME"/safehouse/dotfiles.tar ]; then
-    rm "$HOME"/safehouse/dotfiles.tar
-fi
-
 # Create the initial tar file
 tar --create --file "$HOME"/safehouse/dotfiles.tar "$HOME"/.vimrc >/dev/null 2>&1
 
