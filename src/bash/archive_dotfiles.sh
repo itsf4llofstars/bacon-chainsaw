@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
-# What a simple script to auto archive
-# your dotfiles can look like
-# Works great as a crontab call, or if you want to
-# use as an anacron change the hash-bang line to #!/bin/sh
-# copy file to /etc/cron.[hourly|daily|weekly|monthly]
-# do not append the .sh to a file in anacron
-# If using in an anacron the full typed out expansion of "$HOME"
-# will have to be used as anacron's run as root
+# A simple script to archive user listed config files, and or regular
+# files. This file can be used manualy or setup as a cron job. You will need
+# to populate the DOTFILES array with the files of your choice.
 
 # Exit at first error
 set -e
