@@ -37,8 +37,3 @@ or any editor, IDE, of your choice.
 
 All are welcome to contribute.<br>
 
-## Edit
-
-```bash
-$ git fetch -p --all
-```
