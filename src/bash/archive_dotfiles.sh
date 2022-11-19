@@ -6,7 +6,8 @@
 # Exit at first error (not needed)
 set -e
 
-# Array of files to be archived. Change as needed
+# Array of files to be archived. Change as needed. Don't the first file for
+# the archive to this list. See documentation for initial tar file creation.
 DOTFILES=(.bashrc .bash_aliases .nanorc .gitconfig .tmux.conf)
 
 # Check if folder exists, create it if it does not
