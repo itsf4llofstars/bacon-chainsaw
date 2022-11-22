@@ -32,6 +32,50 @@ $ vim ~/.bashrc
 opens the .bashrc file
 ```
 
-We will add our path in a manner that has Linux searching in our path first.<br>
-Add these lines
+We will add our path in a manner that has Linux searching in our path first<br>
+before any other path directory. Add these lines to your ~/.bashrc file.<br>
+
+> export PATH="$HOME"/bin:$PATH
+> PATH=$PATH:"$HOME"/.local/bin
+
+The second line adds your ~/.local/bin directory to the path as well, but it<br>
+adds it in manner that Linux will check it last. The first line is required the<br>
+second line is not.<br>
+
+### Create The Symbolic link
+
+We are now going to create the symbolink from our personnal path, to the script<br>
+change_mod.sh.<br>
+
+cd into your bin directory, from your home directory you would type:
+
+```bash
+$ cd bin
+
+moves into the ~/bin directory
+```
+
+We now want to think how to get from where we are, ~/bin, to where the<br>
+change_mod.sh file is, using relative paths.. I keep my bash scripts<br>
+in a directory called ~/bashscrits. So for me from the ~/bin directory to the<br>
+~/bashscritps directory I have to go down one directory ../ and up one directory<br>
+to the ~/bashcripts directory. ../bashscripts. To make the link we type:<br>
+
+```bash
+~/bin $ ln -s ../bashscritps/change_mod.sh ./mod
+
+~/bin $ ls -lh
+
+mod -> ../bashscripts/change_mod.sh
+```
+
+Now when we call mod filename from anywhere in our directory structure, Linux<br>
+will see that mod is in the path and call change_mod.sh on the filename. The<br>
+filename must be in the same directory from where we call mod.<br>
+
+```bash
+~/directory $ mod file.ext
+
+The permission of file.ext are change to wxrw-xw-x
+```
 
