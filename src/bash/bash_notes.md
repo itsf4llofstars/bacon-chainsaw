@@ -81,3 +81,11 @@ filename must be in the same directory from where we call mod.<br>
 The permission of file.ext are change to wxrw-xw-x (755)
 ```
 
+We can also create a symbolic link with the cp (copy) command.<br>
+
+```bash
+~/bin $ cp -s ../bashscrits/change_mod.sh ./mod
+
+The permission of file.ext are change to wxrw-xw-x (755)
+```
+
