@@ -1,4 +1,5 @@
 # bacon-chainsaw
+
 A repo to explore the features of GitHub.
 
 Here the idea is to take the opportunity to explore the features of GitHub.<br>
@@ -35,3 +36,4 @@ or any editor, IDE, of your choice.
 ## Contributing
 
 All are welcome to contribute.<br>
+
