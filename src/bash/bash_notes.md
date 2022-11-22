@@ -1,5 +1,7 @@
 # Notes For Scripts
 
+Note: This file is still in a rough draft fromat.
+
 ## Script
 
 ### change_mod.sh
