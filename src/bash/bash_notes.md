@@ -20,7 +20,7 @@ to name such a directory bin. We will create the ~/bin diretory from our<br>
 
 ```bash
 $ cd ~
-$ mkdir bin
+~ $ mkdir bin
 
 Creates the /home/$USER/bin directory
 ```
@@ -29,7 +29,7 @@ To creat you own personal path we can add a couple of lines our .bashrc file.<br
 Open your .bashrc file with any editor, IDE you wish.<br>
 
 ```bash
-$ vim ~/.bashrc
+~ $ vim ~/.bashrc
 
 opens the .bashrc file
 ```
@@ -52,7 +52,7 @@ change_mod.sh.<br>
 cd into your bin directory, from your home directory you would type:
 
 ```bash
-$ cd bin
+~ $ cd bin
 
 moves into the ~/bin directory
 ```
@@ -78,6 +78,6 @@ filename must be in the same directory from where we call mod.<br>
 ```bash
 ~/directory $ mod file.ext
 
-The permission of file.ext are change to wxrw-xw-x
+The permission of file.ext are change to wxrw-xw-x (755)
 ```
 
