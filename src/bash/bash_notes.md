@@ -22,6 +22,7 @@ to name such a directory bin. We will create the ~/bin diretory from our<br>
 $ cd ~
 ~ $ mkdir bin
 
+[output]
 Creates the /home/$USER/bin directory
 ```
 
@@ -31,13 +32,14 @@ Open your .bashrc file with any editor, IDE you wish.<br>
 ```bash
 ~ $ vim ~/.bashrc
 
+[output]
 opens the .bashrc file
 ```
 
 We will add our path in a manner that has Linux searching in our path first<br>
 before any other path directory. Add these lines to your ~/.bashrc file.<br>
 
-> export PATH="$HOME"/bin:$PATH
+> export PATH="$HOME"/bin:$PATH<br>
 > PATH=$PATH:"$HOME"/.local/bin
 
 The second line adds your ~/.local/bin directory to the path as well, but it<br>
@@ -54,6 +56,7 @@ cd into your bin directory, from your home directory you would type:
 ```bash
 ~ $ cd bin
 
+[output]
 moves into the ~/bin directory
 ```
 
@@ -68,6 +71,7 @@ to the ~/bashcripts directory. ../bashscripts. To make the link we type:<br>
 
 ~/bin $ ls -lh
 
+[output]
 mod -> ../bashscripts/change_mod.sh
 ```
 
@@ -78,6 +82,7 @@ filename must be in the same directory from where we call mod.<br>
 ```bash
 ~/directory $ mod file.ext
 
+[output]
 The permission of file.ext are change to rwxr-xr-x (755)
 ```
 
@@ -86,6 +91,7 @@ We can also create a symbolic link with the cp (copy) command.<br>
 ```bash
 ~/bin $ cp -s ../bashscrits/change_mod.sh ./mod
 
-The permission of file.ext are change to rwxr-xr-x (755)
+[output]
+Symboic link from ~/bin/mod to ~/bashscrits/change_mod.sh
 ```
 
