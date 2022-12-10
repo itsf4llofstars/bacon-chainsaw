@@ -9,9 +9,9 @@ PATH_TO_FILES: str = os.path.expanduser('~')
 
 """The below list should be populated by the user. If a file is not
 int the path, /home/$USER then the path to the file from, /home/$USER
-should be used. See FILES_TUPLE[0], ./config/nvim/init.vim for an example.
+should be used. See FILES_LIST[0], ./config/nvim/init.vim for an example.
 """
-FILES_TUPLE = (
+FILES_LIST = (
     ".config/nvim/init.vim",
     ".bashrc",
     ".bash_aliases",
@@ -26,7 +26,7 @@ def main():
     print(PATH_TO_FILES)
 
     # Check files list
-    for filename in FILES_TUPLE:
+    for filename in FILES_LIST:
         print(os.path.join(PATH_TO_FILES, filename))
     print()
 
